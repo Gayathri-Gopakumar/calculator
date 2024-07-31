@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center mt-5">
+        <div class="calculator">
+            <input id="screen" class="form-control text-center my-4" type="text" placeholder="0" readonly>
+            <div class="button-container d-flex flex-wrap justify-content-center">
+                <button onclick="displayContent('7')" class="btn btn-light calc-btn">7</button>
+                <button onclick="displayContent('8')" class="btn btn-light calc-btn">8</button>
+                <button onclick="displayContent('9')" class="btn btn-light calc-btn">9</button>
+                <button onclick="displayContent('*')" class="btn btn-light calc-btn">*</button>
+                
+                <button onclick="displayContent('4')" class="btn btn-light calc-btn">4</button>
+                <button onclick="displayContent('5')" class="btn btn-light calc-btn">5</button>
+                <button onclick="displayContent('6')" class="btn btn-light calc-btn">6</button>
+                <button onclick="displayContent('-')" class="btn btn-light calc-btn">-</button>
+                
+                <button onclick="displayContent('1')" class="btn btn-light calc-btn">1</button>
+                <button onclick="displayContent('2')" class="btn btn-light calc-btn">2</button>
+                <button onclick="displayContent('3')" class="btn btn-light calc-btn">3</button>
+                <button onclick="displayContent('+')" class="btn btn-light calc-btn">+</button>
+                
+                <button onclick="clearScreen()" class="btn btn-light calc-btn">AC</button>
+                <button onclick="displayContent('0')" class="btn btn-light calc-btn">0</button>
+                <button onclick="displayContent('/')" class="btn btn-light calc-btn">/</button>
+                <button onclick="calculateResult()" class="btn btn-light calc-btn">=</button>
+                
+                <button onclick="deleteLast()" class="btn btn-light calc-btn">DEL</button>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
+
